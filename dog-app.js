@@ -1,13 +1,6 @@
 /* eslint-disable no-undef */
 'use strict';
 
-function getDogImage() {
-  fetch('https://dog.ceo/api/breeds/image/random')
-    .then(response => response.json())
-    .then(responseJson => 
-      displayResults(responseJson))
-    .catch(error => alert('Something went wrong. Try again later.'));
-}
 function fetchAllDogImages(countNumber){
   fetch(`https://dog.ceo/api/breeds/image/random/${countNumber}`)
     .then(response => response.json())
