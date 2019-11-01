@@ -12,10 +12,19 @@
     <div class="container">
         <h1>Dog API: A Simple Example</h1>
 
-        <form>
+        <form id="submit">
           Get Dog Pictures:
             <input type="text" name="imgcount" value="3">
+            <button type="submit" form="submit" value="Submit">Get Dogs!</button>
         </form>
+
+        <form id="breed">
+          Get Random Image By Breed:
+            <input type="text" name="breedimg" value="">
+            <button type="submit" value="Submit">Show Dog!</button>
+        </form>
+        
+        <br>
         <section class="results hidden">
           <h2>Look at this dog!</h2>
           <img class="results-img" alt="placeholder">

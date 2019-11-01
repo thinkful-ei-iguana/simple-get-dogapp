@@ -14,3 +14,7 @@
   .hidden {
     display: none;
   }
+
+  .results-img{
+    width: 400px;
+  }
